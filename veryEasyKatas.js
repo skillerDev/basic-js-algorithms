@@ -95,3 +95,19 @@ const howManySeconds = hours => hours * 3600
 //  its area.
 
 const triArea = (base, height) => (base * height)/2
+
+//14. Return the Remainder from Two Numbers
+
+const remainder = (x, y) => x % y
+
+// 15. Is the Number Less than or Equal to Zero?
+// Create a function that takes a number as its only 
+// argument and returns true if it's less than or 
+// equal to zero, otherwise return false.
+const lessThanOrEqualToZero = num => {
+	if (num <= 0){
+		return true
+	} else {
+		return false
+	}
+}
