@@ -211,3 +211,5 @@ const stackBoxes = n => Math.pow(n, 2)
 // Create a function that takes an object argument sizes 
 // (contains width, length, height keys) and returns the 
 // volume of the box.
+
+const volumeOfBox = sizes => sizes.width * sizes.length * sizes.height
