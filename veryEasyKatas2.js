@@ -188,3 +188,26 @@ let b = arr[1]
 // But how could I make tail = [2, 3, 4]
 //  instead of tail = 2?
 
+const str = '[head,... tail] = [1, 2, 3, 4]'
+
+// 18. Concatenating Two Integer Arrays
+// Create a function to concatenate two integer arrays.
+const concat = (arr1, arr2) => arr1.concat(arr2)
+
+
+// 19. Stack the Boxes
+// Here's an image of four models. Some of the cubes are 
+// hidden behind other cubes. Model one consists of one cube. 
+// Model two consists of four cubes, and so on...
+
+// Stack the Boxes
+
+// Write a function that takes a number n and returns the 
+// number of stacked boxes in a model n levels high, 
+// visible and invisible.
+const stackBoxes = n => Math.pow(n, 2)
+
+// 20. Volume of a Box
+// Create a function that takes an object argument sizes 
+// (contains width, length, height keys) and returns the 
+// volume of the box.
