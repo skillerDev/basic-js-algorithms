@@ -111,3 +111,51 @@ const lessThanOrEqualToZero = num => {
 		return false
 	}
 }
+
+// 16. Is the String Empty?
+// Create a function that returns true if a string is empty
+//  and false otherwise.
+const isEmpty = s => {
+	if (s === ""){
+		return true
+	} else if (s !== ""){
+		return false
+	}
+}
+
+// 17. Divides Evenly
+// Given two integers, a and b, return true if a can be divided evenly by b.
+//  Return false otherwise.
+const dividesEvenly = (a, b) => {
+	if (a % b === 0){
+		return true
+	} else {
+		return false
+	}
+}
+
+// 18. Check if an Integer is Divisible By Five
+// Create a function that returns true if an integer is evenly divisible by 5, 
+// and false otherwise.
+const divisibleByFive = n => {
+	if (n % 5 === 0){
+		return true
+	} else {
+		return false
+	}
+}
+
+// 19. Less Than 100?
+// Given two numbers, return true if the sum of both numbers is less than 100. 
+// Otherwise return false.
+const lessThan100 = (a, b) => {
+	if (a + b < 100){
+		return true
+	} else {
+		return false
+	}
+}
+
+// 20. Reverse an Array
+// Write a function to reverse an array.
+const reverse = arr => arr.reverse()
