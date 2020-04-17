@@ -124,3 +124,86 @@ const nSidedShape = n => {
 						 'octagon', 'nonagon', 'decagon'];
 	return arr[n - 1];
 }
+
+// 11. Char-to-ASCII
+// Create a function that returns the ASCII value of the passed in character.
+const ctoa = c => c.charCodeAt()
+
+
+// 12. Is It a Triangle?
+// Create a function that takes three numbers as arguments and returns
+//  true if it's a triangle and false if not.
+const isTriangle = (a, b, c)=> {
+	if (a + b <= c || a + c <= b || b + c <= a){
+		return false
+	} else {
+		return true
+	}
+}
+
+// 13. Slice of Pie
+// Create a function that determines whether or not it's possible to split a 
+// pie fairly given these three parameters:
+
+// Total number of slices.
+// Number of recipients.
+// How many slices each person gets.
+// The function will be in this form:
+
+// equalSlices(total slices, no. recipients, slices each)
+
+const equalSlices = (total, people, each) => people * each <= total
+
+// 14. Add a Consecutive List of Numbers
+// Write a function that takes the last number of a consecutive list of numbers and returns the total of all numbers 
+// up to and including it.
+
+const addUpTo = n => n * (n + 1) / 2;
+
+
+// 15. Fraction Greater Than One
+// Given a fraction as a string, return whether or not it is greater than 1 
+// when evaluated.
+
+const greaterThanOne = frac => eval(frac) > 1;
+
+// 16. Array of Word Lengths
+// Create a function that takes an array of words and transforms it into an array of each
+// word's length.
+const wordLengths = arr => arr.map(newArr => newArr.length)
+
+// 17. The pH Scale
+// Given a pH value, return whether that value is 'alkaline', 'acidic', or 'neutral'. Return 'invalid' if the value given is less than 0 or greater than 14.
+
+// Image of a pH chart
+
+// Examples
+// pHName(5) ➞ "acidic"
+
+// pHName(8.7) ➞ "alkaline"
+
+// pHName(7) ➞ "neutral"
+
+const pHName = pH => pH < 0 || pH > 14 ? 'invalid' :
+	pH < 7 ? 'acidic' : pH > 7 ? 'alkaline' : 'neutral';
+
+// 18. Count the Arguments
+// Create a function that returns the number of argument it was called with.	
+
+const numArgs = (...args) => args.length
+
+// 19. Testing K^K == N?
+// Write a function that returns true if k^k == n for input (n, k) 
+// and return false otherwise.
+const kToK = (n, k) => {
+	if (Math.pow(k,k)== n){
+		return true
+	}else{
+		return false
+	}
+}
+
+// 20. Spaces Between Each Character
+// Create a function that takes a string and returns a string with spaces in 
+// between all of the characters.
+const spaceMeOut = str => str.split('').join(' ')
